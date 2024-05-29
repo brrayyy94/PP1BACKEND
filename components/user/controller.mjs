@@ -27,5 +27,7 @@ const register = async (body) => { // La función asincrónica toma el cuerpo de
     }
 };
 
+
+//pruebas
 export { login, register };
 
