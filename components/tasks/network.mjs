@@ -33,7 +33,7 @@ router.get('/getTasks/:user', (req, res) => {
             success(res, message, 200);
         })
         .catch((err) => {
-            error(res, 'Error interno', 500, err.message);
+            error(res, 'Error interno', 500 || 500, err.message);
         });
 });
 
@@ -43,7 +43,7 @@ router.get('/getTaskById/:taskId', (req, res) => {
             success(res, message, 200);
         })
         .catch((err) => {
-            error(res, 'Error interno', 500, err.message);
+            error(res, 'Error interno', 500 || 500, err.message);
         });
 });
 
